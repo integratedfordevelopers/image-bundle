@@ -53,7 +53,7 @@ class ImageExtension extends \Twig_Extension
             return $this->imageHandling->open(StorageModelFactory::json($json));
         }
 
-        return $this->imageHandling->open((string) $image);
+        return $this->imageHandling->open($image);
     }
 
     /**
